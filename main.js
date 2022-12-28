@@ -33,3 +33,8 @@ window.addEventListener('scroll', () => {
     nav.classList.toggle('scroll', window.scrollY > 50)
 })
 
+window.addEventListener('scroll', () => {
+    const introImg = document.querySelector('#introduction img');
+
+    introImg.classList.toggle('rotate', window.scrollY > 300)
+})

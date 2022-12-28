@@ -42,8 +42,7 @@ h6 {
     position: fixed;
     top: 0;
     z-index: 10;
-    background: radial-gradient(white, #87b8f0);
-
+    background: rgb(231, 229, 229);
 }
 
 .scroll {
@@ -81,6 +80,7 @@ nav .navigation ul li a {
     font-weight: 700;
     transition: 0.5s ease;
     font-family: 'U8', sans-serif;
+    text-transform: uppercase;
 }
 
 nav .navigation ul li a:hover {
@@ -136,7 +136,7 @@ nav .navigation ul li a.btn:hover {
 /* Introduction */
 #introduction {
     padding: 8vw;
-    background: radial-gradient(white, #87b8f0);
+    background: white;
 }
 
 #introduction .wrapper {
@@ -163,6 +163,20 @@ nav .navigation ul li a.btn:hover {
     box-shadow:   20px 20px 9px #495053,
     -20px -20px 9px #edffff;
     object-fit: cover;
+}
+
+.rotate {
+    animation: rotate 2s linear;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
 
 #introduction h1 {
@@ -277,9 +291,8 @@ nav .navigation ul li a.btn:hover {
 /* Activities */
 #activities {
     padding: 8vw;
-    height: 60rem;
-    background: radial-gradient(white, #87b8f0);
-
+    /* height: 60rem; */
+    background: white;
 }
 
 #activities .wrapper {
@@ -363,10 +376,11 @@ nav .navigation ul li a.btn:hover {
     font-size: 17px;
 }
 
+
 /* Testimonial */
 #curriculum {
     background: #001a38;
-    padding-bottom: 8vw;
+    padding: 8vw 0;
     position: relative;
     
 }
@@ -375,46 +389,64 @@ nav .navigation ul li a.btn:hover {
     font-family: 'U8', sans-serif;
     font-size: 50px;
     font-weight: bold;
-    padding-top: 160px;
     text-align: center;
     color: white;
     padding-bottom: 50px;
 }
 
 
-#curriculum image {
+#curriculum .image {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    background: rgb(190, 189, 189);
+    padding: 10px;
 }
 
+
+
+#curriculum .image img {
+    width: 100%;
+    color: white;
+    fill: white;
+}
 #curriculum .swiper {
     width: 950px;
+    min-height: 350px;
+    transition: all 0.5s ease;
 }
 
-#curriculum .wrapper{
-    
+#curriculum h3 {
+    padding: 15px 0;
 }
 
 #curriculum .card {
     background: white;
+    min-height: 300px;
     padding: 20px;
-    width: 100px;
+    border-top-left-radius: 29px;
+    border-top-right-radius: 29px;
+    box-shadow:  22px 22px 61px #8c9a9e,
+             -22px -22px 61px #abbcc2;
 }
 
-#curriculum .container {
-    height: 15rem;
-}
-
-
-#curriculum .swiper-pagination {
-    position: absolute;
-    bottom: -20%;
+#curriculum .swiper-pagination-bullet {
+    background: rgb(128, 247, 128);
     
+    width: 20px;
+    height: 8px;
 }
 
-#curriculum .swiper-pagination-bullet{
-    background: red;
-    width: 20px;
-    height: 20px;
+.swiper-button-next::after {
+    position: absolute;
+    color: rgb(128, 247, 128);
+    font-size: 70px;
+}
+
+.swiper-button-prev::after {
+    position: absolute;
+    color: rgb(128, 247, 128);
+    font-size: 70px;
 }
 
 
