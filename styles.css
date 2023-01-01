@@ -166,19 +166,18 @@ nav .navigation ul li a.btn:hover {
 }
 
 .rotate {
-    animation: rotate 2s linear;
-
+    animation: spin 2s linear;
 }
 
-@keyframes rotate {
+@keyframes spin {
     0% {
         transform: rotate(360deg);
     }
+
     100% {
         transform: rotate(0);
     }
 }
-
 #introduction h1 {
     font-family: 'U8', sans-serif;
     font-weight: bold;
