@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  });
+  })
 
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('.nav-cont')

@@ -117,19 +117,19 @@ nav .navigation ul li a.btn:hover {
 
 @keyframes animate {
     0%,100% {
-        background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,.7)), url(images/bg1.jpg);
+        background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,.7)), url(images/isk_files/slider3.JPG);
     }
 
     25% {
-        background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,.7)), url(images/bg2.jpg);
+        background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,.7)), url(images/isk_files/slider4.JPG);
     }
 
     50% {
-        background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,.7)), url(images/bg3.jpg);
+        background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,.7)), url(images/isk_files/slider5.JPG);
     }
 
     75% {
-        background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,.7)), url(images/bg4.jpg);
+        background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,.7)), url(images/isk_files/slider6.jpg);
     }
 }
 
@@ -166,19 +166,18 @@ nav .navigation ul li a.btn:hover {
 }
 
 .rotate {
-    animation: rotate 2s linear;
-
+    animation: spin 2s linear;
 }
 
-@keyframes rotate {
+@keyframes spin {
     0% {
         transform: rotate(360deg);
     }
+
     100% {
         transform: rotate(0);
     }
 }
-
 #introduction h1 {
     font-family: 'U8', sans-serif;
     font-weight: bold;
