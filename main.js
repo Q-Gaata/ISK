@@ -1,3 +1,5 @@
+const hiddenElements = document.querySelectorAll('.hidden')
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -38,3 +40,15 @@ window.addEventListener('scroll', () => {
 
     introImg.classList.toggle('rotate', window.scrollY > 300)
 })
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) =>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+hiddenElements.forEach(el => observer.observe(el))
