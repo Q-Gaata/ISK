@@ -485,3 +485,255 @@ nav .navigation ul li a.btn:hover {
 }
 
 
+/* Statistics */
+
+#statistics {
+    background: white;
+    padding: 10vw 0;
+}
+
+#statistics .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#statistics .card {
+    min-width: 390px;
+    min-height: 354px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    overflow: visible;
+   }
+
+#statistics .card .img {
+    color: #002147;
+    filter: grayscale(2);
+}
+   
+#statistics .card .item {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+   }
+   
+
+#statistics .item:hover {
+    transform: scale(0.95);
+    transition: all 0.3s;
+   }
+   
+   
+#statistics .item--1 {
+    background: #002147;
+   }
+   
+#statistics .item--2 {
+    background: #0a4d9b;
+   }
+   
+#statistics .item--3 {
+    background: #0a4d9b;
+   }
+   
+#statistics .item--4 {
+    background: #001a38;
+   }
+   
+#statistics .quantity {
+    font-size: 40px;
+    font-weight: 600;
+    padding: 15px 0;
+    color: white;
+   }
+   
+#statistics .text {
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 600;
+   }
+   
+#statistics .text--1 {
+    color: rgba(149,149,255,1);
+   }
+   
+#statistics .text--2 {
+    color: rgba(252,161,71,1);
+   }
+   
+#statistics .text--3 {
+    color: rgba(66,193,110,1);
+   }
+   
+#statistics .text--4 {
+    color: rgba(220,91,183,1);
+   }
+
+
+/* Testimonials */
+
+#testimonials {
+    padding: 8vw 0;
+    background: #002147;
+}
+
+#testimonials .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonials h1 {
+    font-family: 'U8', sans-serif;
+    padding-bottom: 50px;
+    font-size: 45px;
+    font-weight: bold;color: white;
+}
+
+#testimonials .wrapper .left {
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+#testimonials .wrapper .card {
+    position: relative;
+    left: 0%;
+    margin-bottom: 20px;
+    padding: 16px;
+    animation: moving 16s linear infinite;
+    background: white;
+    min-width: 350px;
+    min-height: 300px;
+    border-radius: 20px;
+    border: 15px solid #0a4d9b;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+}
+
+#testimonials .wrapper img {
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#testimonials .wrapper .profile {
+    display: flex;
+    gap: 20px;
+    padding-top: 14px;
+}
+
+
+#testimonials .wrapper .left p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+#testimonials .wrapper .left small {
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#testimonials .wrapper .left h6 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-family: 'U8', sans-serif;
+}
+
+@keyframes moving {
+    0% {
+        left: 10px
+    }
+
+    100% {
+        left: -270px
+    }
+}
+
+/* Partners */
+#partners {
+    background: white;
+    padding: 150px 0;
+}
+
+#partners .wrapper {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#partners img {
+    width: 120px;
+}
+
+/* Footer */
+#footer {
+    padding: 10vw 8vw;
+    background: #002147;
+    color: white;
+}
+
+#footer .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer .item {
+    max-width: 300px;
+}
+
+#footer .item.one, #footer .item.three {
+    flex-basis: 30%;
+}
+
+#footer .item.two, #footer .item.four {
+    flex-basis: 20%;
+}
+
+#footer .school {
+    display: flex;
+    gap: 20px;
+}
+
+#footer img {
+    width: 50px;
+    height: 50px;
+}
+
+#footer .icon {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+#footer h3 {
+    font-family: 'U8', sans-serif;
+    padding-bottom: 20px;
+}
+
+#footer .item.two p{
+    padding-bottom: 15px;
+}
+
+
+#footer .socials i {
+    font-size: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
