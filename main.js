@@ -57,7 +57,7 @@ hiddenElements.forEach(el => observer.observe(el))
 
 valueDisplays.forEach(valueDisplay => {
     let interval = 1000;
-    let division = 900
+    // let division = 900
     let startValue = 0;
     let endValue = parseInt(valueDisplay.getAttribute('data-val'));
     let duration = Math.floor(interval / endValue);
